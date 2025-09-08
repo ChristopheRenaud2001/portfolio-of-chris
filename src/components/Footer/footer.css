@@ -1,0 +1,4 @@
+footer,
+hr {
+	width: calc(100vw - calc(var(--spacing) * 20));
+}
