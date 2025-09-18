@@ -1,18 +1,20 @@
 import type { IconType } from "react-icons";
 import "./navItem.css";
+import { Link } from "react-scroll";
 
 export default function NavItem(props: {
 	icon: IconType;
 	label: string;
-	onClick?: () => void;
 	className?: string;
+	to: string;
 }) {
 	return (
 		<li
-			className={`icon nav-item py-4${props.className ? ` ${props.className}` : ""}`}
-			onClick={props.onClick}
+			className={`icon nav-item py-4 ${props.className ? ` ${props.className}` : ""}`}
 		>
-			<props.icon className="inline transition ease-in-out w-5 h-5 hover:scale-130 opacity-60 hover:opacity-100 hover:cursor-pointer" />
+			<Link to={props.to} smooth={true} duration={600} isDynamic={true}>
+				<props.icon className="inline transition ease-in-out w-5 h-5 hover:scale-150 opacity-80 hover:opacity-100 hover:cursor-pointer" />
+			</Link>
 		</li>
 	);
 }

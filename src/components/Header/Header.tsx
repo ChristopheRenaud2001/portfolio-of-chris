@@ -10,18 +10,10 @@ export default function Header() {
 		<header className="fixed h-screen header-bg px-4 content-center place-items-center w-20">
 			<nav className="w-fit">
 				<ul>
-					<NavItem
-						icon={IoPerson}
-						label="Me"
-						onClick={() => (window.location.href = "#me")}
-					/>
-					<NavItem
-						icon={TiInfoLarge}
-						label="About Me"
-						onClick={() => (window.location.href = "#about-me")}
-					/>
-					<NavItem icon={FaCode} label="Project" />
-					<NavItem icon={IoMail} label="Contant Me" />
+					<NavItem icon={IoPerson} label="Me" to="me" />
+					<NavItem icon={TiInfoLarge} label="About Me" to="about-me" />
+					<NavItem icon={FaCode} label="Project" to="projects" />
+					<NavItem icon={IoMail} label="Contact Me" to="contact-me" />
 				</ul>
 			</nav>
 		</header>

@@ -13,15 +13,22 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/.well-known/appspecific/com.chrome.devtools.json": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/";
+    page: "/" | "/.well-known/appspecific/com.chrome.devtools.json";
   };
   "./pages/Home/Home.tsx": {
     id: "pages/Home/Home";
     page: "/";
+  };
+  "pages/debug-null.tsx": {
+    id: "pages/debug-null";
+    page: "/.well-known/appspecific/com.chrome.devtools.json";
   };
 };

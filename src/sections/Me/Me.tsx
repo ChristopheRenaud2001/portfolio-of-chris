@@ -21,12 +21,12 @@ function Me() {
 						</p>
 						<h1 className="whitespace-normal lg:text-end text-center">
 							<span
-								className={`block transition-all ease-in-out delay-250 duration-1200 ${section1HasRendered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+								className={`block transition ease-in-out delay-250 duration-1200 ${section1HasRendered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
 							>
 								Christophe
 							</span>
 							<span
-								className={`block transition-all ease-in-out delay-250 duration-1200 ${section1HasRendered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+								className={`block transition ease-in-out delay-250 duration-1200 ${section1HasRendered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
 							>
 								Renaud
 							</span>

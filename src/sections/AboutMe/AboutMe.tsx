@@ -9,7 +9,7 @@ function AboutMe() {
 	return (
 		<div id="about-me" className="mt-12">
 			<div
-				className={`my-6 transition-all ease-in-out duration-1500 ${section1HasRendered ? "opacity-100 translate-x-0" : "opacity-0 translate-x-15"}`}
+				className={`h-screen content-center transition-all ease-in-out duration-1500 ${section1HasRendered ? "opacity-100 translate-x-0" : "opacity-0 translate-x-15"}`}
 				ref={section1Ref}
 			>
 				<h2 className="text-4xl font-bold mb-6">About Me</h2>

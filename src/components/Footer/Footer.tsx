@@ -5,7 +5,7 @@ import { FaAt } from "react-icons/fa";
 
 export default function Footer() {
 	return (
-		<div className="place-items-end">
+		<div id="contact-me" className="place-items-end">
 			<hr />
 			<footer className="place-items-center opacity-60 py-6">
 				<p>Don't hesitate to reach out!</p>

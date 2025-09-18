@@ -21,7 +21,7 @@
 	}
 
 	h1 {
-		font-size: 8rem;
+		font-size: clamp(0.5rem, calc(12vw + 1rem), 10rem);
 		line-height: 1em;
 	}
 
@@ -34,5 +34,9 @@
 
 	.content {
 		width: calc(100vw - calc(var(--spacing) * 20));
+	}
+
+	.cursor {
+		display: none;
 	}
 }

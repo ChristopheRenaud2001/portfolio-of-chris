@@ -1,0 +1,16 @@
+.slideshow-item {
+	flex: 0 0 100%;
+	img {
+		object-fit: contain;
+	}
+}
+
+.active-indicator {
+	outline: 2px solid var(--theme-green);
+	background-color: var(--theme-green);
+}
+
+.indicator {
+	outline: 2px solid var(--theme-green);
+	background-color: var(--theme-dark);
+}
