@@ -1,10 +1,11 @@
 import { Outlet } from "react-router";
 import "./root.css";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import DesktopHeader from "./components/Header/DesktopHeader/DesktopHeader";
 import IconCursor, { StyledCursor } from "./components/Cursor/IconCursor";
 import { useEffect, useRef } from "react";
 import { StyledBackground } from "./components/Background/background";
+import MobileHeader from "./components/Header/MobileHeader/MobileHeader";
 
 export default function Root() {
 	const cursorRef = useRef<HTMLDivElement>(null);
@@ -35,11 +36,12 @@ export default function Root() {
 	}, []);
 
 	return (
-		<div className="h-full">
+		<div className="h-full flex flex-col">
 			<StyledBackground id="bg" />
 			<title>Chris' Portfolio</title>
-			<Header />
-			<div className="content place-self-end">
+			<DesktopHeader />
+			<MobileHeader />
+			<div className="content flex place-self-end w-full">
 				<Outlet />
 			</div>
 			<Footer />

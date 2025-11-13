@@ -4,14 +4,14 @@ export const StyledBackground = styled.div`
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	/* Add your background pattern here */
 	background-image: linear-gradient(
 		to right,
-		#171717 97%,
-		#242424 97%,
-		#242424 100%
+		var(--theme-dark) 97%,
+		var(--theme-gray) 97%,
+		var(--theme-gray) 100%
 	);
 	background-size: 80px 80px;
 	z-index: -1;

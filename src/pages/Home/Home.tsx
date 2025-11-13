@@ -4,7 +4,7 @@ import Projects from "../../sections/Projects/Projects";
 
 function Home() {
 	return (
-		<div className="px-40" style={{ fontFamily: "Prata" }}>
+		<div className="flex flex-col max-w-full" style={{ fontFamily: "Prata" }}>
 			<Me />
 			<AboutMe />
 			<Projects />

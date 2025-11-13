@@ -2,22 +2,20 @@
 
 :root {
 	/* Theme colors */
-	--theme-dark: #102820;
-	--theme-dark-green: #2f4638;
-	--theme-green: #c7a98a;
-	--theme-beige: #dad7cd;
+	--theme-dark: #171717;
+	--theme-gray: #242424;
+	--theme-beige: #c7a98a;
+	--theme-light: #dad7cd;
 	--theme-light-green: #a3b18a;
 
 	background: var(--theme-dark);
-	color: var(--theme-beige);
-
-	width: 100vw;
-	height: 100vh;
+	color: var(--theme-light);
 
 	overflow-x: hidden;
 
 	body {
 		height: 100%;
+		width: 100%;
 	}
 
 	body.modal-open {
@@ -33,7 +31,7 @@
 	h2,
 	h3,
 	a {
-		color: #c7a98a;
+		color: var(--theme-beige);
 	}
 
 	h2 {
@@ -43,14 +41,17 @@
 	}
 
 	.content {
-		width: calc(100vw - calc(var(--spacing) * 20));
+		/* For devices with a minimum width of 768px (Medium) */
+		@media screen and (min-width: 768px) {
+			width: calc(100vw - calc(var(--spacing) * 20));
+		}
 	}
 
 	.cursor {
-		display: none;
+		fill: var(--theme-beige);
 	}
 
 	svg {
-		fill: var(--theme-beige);
+		fill: var(--theme-light);
 	}
 }

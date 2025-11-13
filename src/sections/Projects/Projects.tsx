@@ -33,11 +33,11 @@ import {
 
 function Projects() {
 	return (
-		<div className="content-center" id="projects">
+		<div className="content-center px-4 md:px-20 min-h-screen" id="projects">
 			<h2 className="text-4xl font-bold">Projects</h2>
 			<Project
 				link="https://irap-qaadmin.epsi-inc.com/"
-				title="EPSI - Admin Platform"
+				title="EPSI - Admin"
 				images={[
 					EPSIAdminLoginDesktopLight,
 					EPSIAdminLoginMobileLight,
@@ -47,7 +47,7 @@ function Projects() {
 			/>
 			<Project
 				link="https://irap-qaclient.epsi-inc.com/"
-				title="EPSI - Client Platform"
+				title="EPSI - Client"
 				images={[
 					EPSIClientLoginDesktopLight,
 					EPSIClientLoginMobileLight,
@@ -61,7 +61,7 @@ function Projects() {
 			/>
 			<Project
 				link="https://irap-qacandidat.epsi-inc.com/"
-				title="EPSI - Candidate Platform"
+				title="EPSI - Candidate"
 				images={[
 					EPSICandidateLoginDesktopLight,
 					EPSICandidateLoginMobileLight,

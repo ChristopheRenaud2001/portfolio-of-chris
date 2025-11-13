@@ -6,15 +6,19 @@
 }
 
 .active-indicator {
-	outline: 2px solid var(--theme-green);
-	background-color: var(--theme-green);
+	outline: 2px solid var(--theme-dark);
+	background-color: var(--theme-beige);
 }
 
 .indicator {
-	outline: 2px solid var(--theme-green);
+	outline: 2px solid var(--theme-beige);
 	background-color: var(--theme-dark);
 }
 
 .modal-open {
+	background-color: var(--theme-dark);
+}
+
+.modal-bg {
 	background-color: var(--theme-dark);
 }

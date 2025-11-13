@@ -7,9 +7,9 @@ function AboutMe() {
 		ref: section1Ref as React.RefObject<HTMLDivElement>,
 	});
 	return (
-		<div id="about-me" className="mt-12">
+		<div id="about-me" className="mt-12 px-8 md:px-20">
 			<div
-				className={`h-screen content-center transition-all ease-in-out duration-1500 ${section1HasRendered ? "opacity-100 translate-x-0" : "opacity-0 translate-x-15"}`}
+				className={`flex flex-col min-h-screen max-h-fit place-content-center mb-10 md:mb-0 transition-all ease-in-out duration-1500 ${section1HasRendered ? "opacity-100 translate-y-0 md:translate-x-0" : "opacity-0 translate-y-15 md:translate-x-15"}`}
 				ref={section1Ref}
 			>
 				<h2 className="text-4xl font-bold mb-6">About Me</h2>

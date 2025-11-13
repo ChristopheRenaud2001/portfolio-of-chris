@@ -1,5 +1,4 @@
 import type { IconType } from "react-icons";
-import "./navItem.css";
 import { Link } from "react-scroll";
 
 export default function NavItem(props: {

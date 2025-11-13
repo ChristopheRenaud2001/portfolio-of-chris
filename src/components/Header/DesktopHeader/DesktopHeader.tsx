@@ -1,14 +1,14 @@
-import "./header.css";
+import "./desktopheader.css";
 import { IoPerson } from "react-icons/io5";
 import { TiInfoLarge } from "react-icons/ti";
 import { FaCode } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
-import NavItem from "./NavItem/NavItem";
+import NavItem from "../NavItem/NavItem";
 
-export default function Header() {
+export default function DesktopHeader() {
 	return (
-		<header className="fixed h-screen header-bg px-4 content-center place-items-center w-20">
-			<nav className="w-fit">
+		<header className=" hidden md:flex flex-col fixed h-screen header-bg px-4 content-center place-items-center items-center w-20">
+			<nav className="w-fit h-full content-center">
 				<ul>
 					<NavItem icon={IoPerson} label="Me" to="me" />
 					<NavItem icon={TiInfoLarge} label="About Me" to="about-me" />

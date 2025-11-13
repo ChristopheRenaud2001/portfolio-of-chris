@@ -1,5 +1,5 @@
 .stack-caroussel {
-	width: clamp(20rem, 50%, 40rem);
+	width: clamp(15rem, 50%, 40rem);
 	height: fit-content;
 	overflow: hidden;
 }
@@ -12,7 +12,7 @@
 	animation: slide 15s linear infinite;
 
 	svg {
-		fill: #c7a98a;
+		fill: var(--theme-beige);
 	}
 }
 

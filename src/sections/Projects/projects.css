@@ -5,7 +5,7 @@
 	position: absolute;
 	width: 40px;
 	height: 20px;
-	border-color: #c7a98a;
+	border-color: var(--theme-beige);
 	border-style: solid;
 	pointer-events: none;
 }
