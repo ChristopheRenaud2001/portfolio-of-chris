@@ -42,29 +42,32 @@ export default function SlideShow(props: {
 	};
 	return (
 		<>
-			<div id="slideshow-container" className="w-full mt-5">
+			<div
+				id="slideshow-container"
+				className="w-full flex flex-col place-content-center"
+			>
 				{/* Slider images */}
-				<ul className="flex h-56 overflow-hidden rounded-lg md:h-96 overflow-x-hidden snap-x">
+				<ul className="flex h-40 md:h-96 overflow-hidden rounded-lg overflow-x-hidden snap-x">
 					{props.images?.map((src, index) => {
 						return (
 							<li
-								className="duration-700 ease-in-out slideshow-item snap-center"
+								className="duration-700 ease-in-out slideshow-item snap-center flex place-items-center"
 								data-carousel-item={index === 0 ? "active" : undefined}
 								id={`${props.title}-slide-${index}`}
 								key={`${props.title}-slide-${index}`}
 							>
 								<div
-									className="relative w-fit h-fit place-self-center items-center cursor-pointer group/img"
+									className="relative w-full h-fit cursor-pointer group/img"
 									onClick={() => setActiveImage(src)}
 								>
-									<div className="flex flex-col h-100 w- self-center">
+									<div className="flex flex-col h-full w-full">
 										<img
 											src={src}
 											alt={`${props.title}-slide-${index}`}
-											className="flex w-10/12 place-self-center self-center group-hover/img:opacity-50 object-cover max-h-100"
+											className="flex w-10/12 place-self-center self-center group-hover/img:opacity-50 max-h-100"
 										/>
 									</div>
-									<FaEye className="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover/img:block w-6 h-6" />
+									<FaEye className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover/img:block w-6 h-6" />
 								</div>
 							</li>
 						);
@@ -158,16 +161,20 @@ export default function SlideShow(props: {
 			</div>
 
 			{!!activeImage && (
-				<div className={`w-screen h-screen fixed top-0 left-0 z-20 modal`}>
-					<IoCloseSharp
-						className="w-10 h-10 absolute top-5 right-5 cursor-pointer"
-						onClick={() => setActiveImage(null)}
-					/>
-					<img
-						src={activeImage}
-						alt={`Active image displayed in modal-open for ${props.title}`}
-						className="place-self-center align-middle w-full h-full object-contain"
-					/>
+				<div
+					className={`w-screen h-screen fixed top-0 left-0 z-20 modal modal-bg`}
+				>
+					<div className="h-full w-full">
+						<IoCloseSharp
+							className="w-10 h-10 absolute top-5 right-5 cursor-pointer"
+							onClick={() => setActiveImage(null)}
+						/>
+						<img
+							src={activeImage}
+							alt={`Active image displayed in modal-open for ${props.title}`}
+							className="place-self-center align-middle w-full h-full object-contain"
+						/>
+					</div>
 				</div>
 			)}
 		</>

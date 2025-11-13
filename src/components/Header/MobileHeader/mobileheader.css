@@ -1,4 +1,4 @@
 .header-bg {
-	background-color: #242424;
+	background-color: var(--theme-gray);
 	color: var(--theme-beige);
 }
