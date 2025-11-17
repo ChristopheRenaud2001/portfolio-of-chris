@@ -1,0 +1,27 @@
+.stack-caroussel {
+	width: clamp(15rem, 50%, 40rem);
+	height: fit-content;
+	overflow: hidden;
+}
+
+.stack-caroussel-items {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: slide 15s linear infinite;
+
+	svg {
+		fill: var(--theme-beige);
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
+	}
+}

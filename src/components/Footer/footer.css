@@ -1,0 +1,8 @@
+footer {
+	/* For devices with a minimum width of 768px (Medium) */
+	@media screen and (min-width: 768px) {
+		width: calc(100vw - calc(var(--spacing) * 20));
+	}
+	background-color: var(--theme-dark);
+	border-top: 4px solid var(--theme-gray);
+}
