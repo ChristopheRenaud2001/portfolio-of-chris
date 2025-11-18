@@ -110,7 +110,7 @@
     "src": "src/assets/Images/Projects/EPSI/Platforms/Client/EPSI-Client-RegistrationDetails.jpg"
   },
   "src/entry.client.tsx": {
-    "file": "assets/entry.client-BKbXk2Pw.js",
+    "file": "assets/entry.client-DW_c2YCX.js",
     "name": "entry.client",
     "src": "src/entry.client.tsx",
     "isEntry": true,
@@ -120,7 +120,7 @@
       "_index-DdyyeNDd.js"
     ],
     "css": [
-      "assets/entry-BX_HGaS6.css"
+      "assets/entry-Mu4_a5gc.css"
     ]
   },
   "src/pages/Home/Home.tsx?__react-router-build-client-route": {
