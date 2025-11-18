@@ -3,7 +3,7 @@
 // and the documentation shows that the framework mode is touching almost every
 // functionality of react-router.
 
-import { type RouteConfig, index, route } from "@react-router/dev/routes";
+import { type RouteConfig, route } from "@react-router/dev/routes";
 
 export default [
 	route("/portfolio-of-chris", "./pages/Home/Home.tsx"),
