@@ -6,6 +6,7 @@ declare module "react-router" {
   interface Register {
     pages: Pages
     routeFiles: RouteFiles
+    routeModules: RouteModules
   }
 }
 
@@ -31,4 +32,10 @@ type RouteFiles = {
     id: "pages/debug-null";
     page: "/.well-known/appspecific/com.chrome.devtools.json";
   };
+};
+
+type RouteModules = {
+  "root": typeof import("./src/root.tsx");
+  "pages/Home/Home": typeof import("./src/./pages/Home/Home.tsx");
+  "pages/debug-null": typeof import("./src/pages/debug-null.tsx");
 };
