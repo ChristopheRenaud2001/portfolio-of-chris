@@ -14,7 +14,7 @@ I am currently looking at what other projects from my time in college could be a
 
 ## 🚀 Live Site
 
-Check it out here: Coming Soon!
+Check it out here: (https://christopherenaud2001.github.io/portfolio-of-chris/)
 
 
 ## 📫 Feel Free to Contact Me!
