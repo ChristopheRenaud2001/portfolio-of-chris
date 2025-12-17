@@ -1,9 +1,9 @@
 import "./root.css";
 import Footer from "./components/Footer/Footer";
 import DesktopHeader from "./components/Header/DesktopHeader/DesktopHeader";
-import IconCursor, { StyledCursor } from "./components/Cursor/IconCursor";
-import { useEffect, useRef } from "react";
-import { StyledBackground } from "./components/Background/background";
+import IconCursor, {StyledCursor} from "./components/Cursor/IconCursor";
+import {useEffect, useRef} from "react";
+import {StyledBackground} from "./components/Background/background";
 import MobileHeader from "./components/Header/MobileHeader/MobileHeader";
 import Home from "./pages/Home/Home";
 

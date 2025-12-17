@@ -34,7 +34,7 @@ import {
 function Projects() {
 	return (
 		<div className="content-center px-4 md:px-20 min-h-screen" id="projects">
-			<h2 className="text-4xl font-bold">Projects</h2>
+			<h2 className="text-4xl font-bold">Projects I've Worked On</h2>
 			<Project
 				link="https://irap-qaadmin.epsi-inc.com/"
 				title="EPSI - Admin"
